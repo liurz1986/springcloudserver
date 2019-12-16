@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: api-gateway
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/dbkeda?useUnicode=true&characterEncoding=UTF-8&sessionVariables=FOREIGN_KEY_CHECKS=0&autoReconnect=true
+#    username: root
+#    password: root
+  redis:
+    host: 47.93.226.214
+    port: 6379
+    database: 0
+  session:
+    store-type: redis
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+zuul:
+  add-host-header: true #解决重定向问题
+  sensitive-headers: #解决HTTP请求头信息中的Cookie和Authorization都没有被正确地传递给具体服务，所以最终导致会话状态没有得到保持的问题。
+zuul: 
+  routes:
+    eureka-web: /apiGateWay/**    采用服务名
+    
+     
+#Spring Security配置
+#security:
+#  user:
+#    name: root
+#    password: root
+
+mongodb:
+      port:27017
+      ip:localhost
+      databasename:liurz
+      
+
+
