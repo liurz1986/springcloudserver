@@ -23,7 +23,7 @@ import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @SpringBootApplication
 @RefreshScope // 配置文件更新配置，可以手动刷新配置
 public class UserApplication {
@@ -91,6 +91,7 @@ public class UserApplication {
 	public Map<String, String> test2() {
 		Map<String, String> params = new HashMap<String, String>();// 线程不安全的
 		params.put("data", message);
+		params.put("status" ,"success");
 		return params;
 	}
 

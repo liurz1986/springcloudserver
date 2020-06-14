@@ -1,39 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a910ba96-c2ea-4ad3-aba2-cbfaae1b080e" name="Default Changelist" comment="" />
+    <list default="true" id="a910ba96-c2ea-4ad3-aba2-cbfaae1b080e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.liurz.iresources.activiti/com.liurz.iresources.activiti.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.liurz.iresources.config/com.liurz.iresources.config.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.liurz.iresources.core/com.liurz.iresources.core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/com.liurz.iresources.eurekaserver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.liurz.iresources.gateway/com.liurz.iresources.gateway.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/com.liurz.iresources.servcie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/iresources.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iresources.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/META-INF/maven/cn.com/com.liurz.iresources.activiti/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/META-INF/maven/cn.com/com.liurz.iresources.activiti/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/application-product.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/logback_log.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/ActivitiServerApplicaiton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/controller/WorkFlowController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/controller/WorkFlowHistoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/entity/ActivitiTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/entity/WorkFlowVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/service/IWorkFlowHistoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/service/IWorkFlowService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/service/impl/WorkFlowHistoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/service/impl/WorkFlowService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/util/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/util/ExcelUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/util/JDBCUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/org/com/liurz/iresources/activiti/util/ResponseVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/processes/apply.bpmn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/classes/processes/myProcess.bpmn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.activiti/target/test-classes/org/com/liurz/iresources/activiti/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/classes/META-INF/maven/cn.com/com.liurz.iresources.config/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/classes/META-INF/maven/cn.com/com.liurz.iresources.config/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/classes/org/com/liurz/iresources/config/ConfigServerGitApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.config/target/test-classes/org/com/liurz/iresources/config/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/META-INF/maven/cn.com/com.liurz.iresources.core/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/META-INF/maven/cn.com/com.liurz.iresources.core/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/lock/DistributedLockByZookeeper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/lock/ZookeeperConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/process/ProcessCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/process/ProcessUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/AESUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/Base64Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/BigDecimalUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/HttpHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/JdbcUtill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/JsonHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/MD5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/PropertiesUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/RSAUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/RedisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/ResultDateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/ServiceResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/StatusStr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/classes/org/com/liurz/iresources/core/util/excelString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.core/target/test-classes/org/com/liurz/iresources/core/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/classes/META-INF/maven/cn.com/com.liurz.iresources.eurekaserver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/classes/META-INF/maven/cn.com/com.liurz.iresources.eurekaserver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/classes/org/com/liurz/iresources/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/com.liurz.iresources.eurekaserver-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/com.liurz.iresources.eurekaserver-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/test-classes/org/com/liurz/iresources/eurekaserver/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/META-INF/maven/cn.com/com.liurz.iresources.gateway/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/META-INF/maven/cn.com/com.liurz.iresources.gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/GateWayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/config/BaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/entity/LogVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/entity/RedisVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/filter/AccessFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/service/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/service/RedisService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/util/MongoDBUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/util/RedisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/classes/org/com/liurz/iresources/gateway/util/SSOUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.gateway/target/test-classes/org/com/liurz/iresources/gateway/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/META-INF/maven/cn.com/com.liurz.iresources.servcie/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/META-INF/maven/cn.com/com.liurz.iresources.servcie/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/UserApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/annocation/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/annocation/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/controller/RoleServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/controller/RoleServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/entity/UserVOExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/mapper/RoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/mapper/RoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/mapper/UserVOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/mapper/UserVOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/service/IRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/service/IRoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/service/impl/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/service/impl/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/util/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/classes/org/com/liurz/iresources/servcie/util/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/com.liurz.iresources.servcie-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/com.liurz.iresources.servcie-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/surefire-reports/TEST-org.com.liurz.iresources.servcie.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/surefire-reports/org.com.liurz.iresources.servcie.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/test-classes/org/com/liurz/iresources/servcie/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/com.liurz.iresources.servcie/target/test-classes/org/com/liurz/iresources/servcie/AppTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/com.liurz.iresources.servcie/target/" />
+    <ignored path="$PROJECT_DIR$/com.liurz.iresources.config/target/" />
+    <ignored path="$PROJECT_DIR$/com.liurz.iresources.gateway/target/" />
+    <ignored path="$PROJECT_DIR$/com.liurz.iresources.activiti/target/" />
+    <ignored path="$PROJECT_DIR$/com.liurz.iresources.core/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="iresources" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/UserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state relative-caret-position="138">
+              <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="method#fastJsonConfigure#0;class#UserApplication#0" />
+                <element signature="docComment;method#jackJsonConfigure#0;class#UserApplication#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/software/java/meaven/M2/repository/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE-sources.jar!/org/springframework/http/converter/json/MappingJackson2HttpMessageConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/service/IRoleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Start</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\workspace\iresources</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/UserApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/software/java/meaven/apache-maven-3.3.3" />
+        <option name="userSettingsFile" value="D:\software\java\meaven\M2\settings.xml" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com.liurz.iresources.gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com.liurz.iresources.servcie" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com.liurz.iresources.servcie" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
@@ -41,12 +250,12 @@
     <option name="width" value="1890" />
     <option name="height" value="960" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -54,16 +263,27 @@
               <item name="iresources" type="b2602c69:ProjectViewProjectNode" />
               <item name="iresources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="iresources" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592130818212" />
     <property name="last_opened_file_path" value="D:/software/handel/Git/bin/git.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,10 +293,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -90,6 +310,61 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.UserApplication">
+    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.com.liurz.iresources.servcie.UserApplication" />
+      <module name="com.liurz.iresources.servcie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.com.liurz.iresources.servcie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiServerApplicaiton" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.liurz.iresources.activiti" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.com.liurz.iresources.activiti.ActivitiServerApplicaiton" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerGitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.liurz.iresources.config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.com.liurz.iresources.config.ConfigServerGitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.liurz.iresources.eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.com.liurz.iresources.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.liurz.iresources.gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.com.liurz.iresources.gateway.GateWayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="com.liurz.iresources.servcie" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.com.liurz.iresources.servcie.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -101,12 +376,18 @@
       <option name="presentableId" value="Default" />
       <updated>1591189131395</updated>
       <workItem from="1591189135658" duration="599000" />
-      <workItem from="1592062855904" duration="517000" />
+      <workItem from="1592062855904" duration="2718000" />
+      <workItem from="1592120521605" duration="2203000" />
+      <workItem from="1592123118488" duration="219000" />
+      <workItem from="1592123374677" duration="607000" />
+      <workItem from="1592124022049" duration="156000" />
+      <workItem from="1592124214647" duration="1095000" />
+      <workItem from="1592125343077" duration="3585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1116000" />
+    <option name="totallyTimeSpent" value="11182000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -119,49 +400,137 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955595" visible="true" weight="0.27890056" />
+      <window_info id="Structure" order="1" sideWeight="0.5044405" side_tool="true" weight="0.25788197" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5044405" side_tool="true" weight="0.25788197" />
+      <window_info id="Web" order="7" sideWeight="0.5044405" side_tool="true" weight="0.25788197" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987874" weight="0.31616342" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497979" visible="true" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995958" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.330373" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502021" side_tool="true" weight="0.39964476" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.497979" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.16087309" />
+      <window_info anchor="right" x="518" y="59" width="244" height="563" id="Maven" order="5" visible="true" weight="0.117219076" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32983023" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/com.liurz.iresources.gateway/src/main/java/org/com/liurz/iresources/gateway/entity/LogVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/service/IRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software/java/meaven/M2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar!/org/apache/http/impl/conn/DefaultClientConnectionOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2442">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/net/AbstractPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1501">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software/java/meaven/M2/repository/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE-sources.jar!/org/springframework/http/converter/json/MappingJackson2HttpMessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com.liurz.iresources.servcie/src/main/java/org/com/liurz/iresources/servcie/UserApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="138">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="method#fastJsonConfigure#0;class#UserApplication#0" />
+            <element signature="docComment;method#jackJsonConfigure#0;class#UserApplication#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -182,7 +551,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -222,7 +591,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -230,6 +598,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -240,5 +609,8 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>

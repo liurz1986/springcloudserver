@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.liurz.iresources.activiti/com.liurz.iresources.activiti.iml" filepath="$PROJECT_DIR$/com.liurz.iresources.activiti/com.liurz.iresources.activiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.liurz.iresources.config/com.liurz.iresources.config.iml" filepath="$PROJECT_DIR$/com.liurz.iresources.config/com.liurz.iresources.config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.liurz.iresources.core/com.liurz.iresources.core.iml" filepath="$PROJECT_DIR$/com.liurz.iresources.core/com.liurz.iresources.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.liurz.iresources.eurekaserver/com.liurz.iresources.eurekaserver.iml" filepath="$PROJECT_DIR$/com.liurz.iresources.eurekaserver/com.liurz.iresources.eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.liurz.iresources.gateway/com.liurz.iresources.gateway.iml" filepath="$PROJECT_DIR$/com.liurz.iresources.gateway/com.liurz.iresources.gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.liurz.iresources.servcie/com.liurz.iresources.servcie.iml" filepath="$PROJECT_DIR$/com.liurz.iresources.servcie/com.liurz.iresources.servcie.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/iresources.iml" filepath="$PROJECT_DIR$/.idea/iresources.iml" />
     </modules>
   </component>

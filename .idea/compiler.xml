@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com.liurz.iresources.activiti" />
+        <module name="com.liurz.iresources.config" />
+        <module name="com.liurz.iresources.servcie" />
+        <module name="com.liurz.iresources.gateway" />
+        <module name="com.liurz.iresources.core" />
+        <module name="com.liurz.iresources.eurekaserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.liurz.iresources.activiti" target="1.8" />
+      <module name="com.liurz.iresources.config" target="1.8" />
+      <module name="com.liurz.iresources.core" target="1.8" />
+      <module name="com.liurz.iresources.eurekaserver" target="1.8" />
+      <module name="com.liurz.iresources.gateway" target="1.8" />
+      <module name="com.liurz.iresources.servcie" target="1.8" />
+      <module name="iresources" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.liurz.iresources.activiti" options="-parameters" />
+      <module name="com.liurz.iresources.config" options="-parameters" />
+      <module name="com.liurz.iresources.core" options="-parameters" />
+      <module name="com.liurz.iresources.eurekaserver" options="-parameters" />
+      <module name="com.liurz.iresources.gateway" options="-parameters" />
+      <module name="com.liurz.iresources.servcie" options="-parameters" />
+    </option>
+  </component>
+</project>
