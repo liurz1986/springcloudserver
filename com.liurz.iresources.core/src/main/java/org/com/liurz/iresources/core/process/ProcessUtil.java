@@ -2,11 +2,15 @@ package org.com.liurz.iresources.core.process;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import java.lang.Runnable;
 /**
  * 多线程处理工具类
  * 
@@ -18,6 +22,10 @@ import java.util.concurrent.Future;
  */
 public class ProcessUtil {
 
+	// 阻塞队列
+	private static BlockingQueue<Runnable> taskQueue= new ArrayBlockingQueue<Runnable>(5000);
+	// 线程池，固定大小，有界队列
+	public static ExecutorService executorService = new ThreadPoolExecutor(10,10,60, TimeUnit.SECONDS,taskQueue);
 	/**
 	 * 多个线程处理，最好不要超过10个线程，线程池数量根据线程的数据来定
 	 * 
@@ -96,6 +104,14 @@ public class ProcessUtil {
 			if (null != executorService) {
 				executorService.shutdown();
 			}
+		}
+	}
+
+	public void submitRunnable(Runnable runnable){
+		try {
+			executorService.submit(runnable);
+		} catch (Exception e) {
+			throw new RuntimeException();
 		}
 	}
 }

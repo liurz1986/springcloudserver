@@ -28,10 +28,10 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<!-- springcloud-bus依赖实现配置自动更新，rabbitmq -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
+		</dependency>-->
 
 	</dependencies>
 	<!-- 主要是配置插件 -->

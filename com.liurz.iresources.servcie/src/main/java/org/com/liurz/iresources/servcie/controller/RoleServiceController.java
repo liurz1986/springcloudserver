@@ -1,9 +1,5 @@
 package org.com.liurz.iresources.servcie.controller;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.com.liurz.iresources.servcie.annocation.Author;
 import org.com.liurz.iresources.servcie.service.IRoleService;
 import org.com.liurz.iresources.servcie.util.UserRole;
@@ -13,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/rest/v1/role")
@@ -69,7 +69,7 @@ public class RoleServiceController {
 		return result;
 	}
 
-	@Author(value = UserRole.ALLUSER)
+	//@Author(value = UserRole.ALLUSER)
 	@RequestMapping(value = "/findById/{id}", method = RequestMethod.GET)
 	public Map<String, Object> findaById(@PathVariable("id") int id) {
 		Map<String, Object> result = new HashMap<String, Object>();

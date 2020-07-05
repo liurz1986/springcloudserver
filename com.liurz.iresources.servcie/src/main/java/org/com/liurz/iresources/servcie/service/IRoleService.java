@@ -7,10 +7,10 @@ public interface IRoleService {
 	 * 保存
 	 * @param role
 	 */
-	public void saveRole(Map<String,Object> role);
+	public void saveRole(Map<String,Object> role) throws InterruptedException;
 	/**
 	 * 批量保存
-	 * @param files
+	 * @param roles
 	 */
 	public void batchSaveRole(List<Map<String,Object>> roles);
 	/**

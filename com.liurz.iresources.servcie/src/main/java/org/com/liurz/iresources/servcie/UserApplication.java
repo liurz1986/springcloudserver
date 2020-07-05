@@ -1,5 +1,20 @@
 package org.com.liurz.iresources.servcie;
 
+import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.alibaba.fastjson.support.config.FastJsonConfig;
+import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,23 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.http.MediaType;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.alibaba.fastjson.support.config.FastJsonConfig;
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-//@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 @RefreshScope // 配置文件更新配置，可以手动刷新配置
 public class UserApplication {

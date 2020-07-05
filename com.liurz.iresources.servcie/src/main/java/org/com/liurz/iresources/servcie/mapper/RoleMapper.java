@@ -1,9 +1,9 @@
 package org.com.liurz.iresources.servcie.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 import java.util.Map;
-
-import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface RoleMapper {
@@ -17,7 +17,7 @@ public interface RoleMapper {
 	/**
 	 * 批量保存
 	 * 
-	 * @param files
+	 * @param roles
 	 */
 	public void batchSaveRole(List<Map<String, Object>> roles);
 
@@ -40,5 +40,8 @@ public interface RoleMapper {
 	 * 通过用户名获取用户角色
 	 */
 	public List<String> getRoleName(String userName);
+
+
+	public void deleteAll();
 
 }

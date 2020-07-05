@@ -40,5 +40,9 @@
 	   left join t_user_role_relation  b on a.id=b.role_id
        left join t_user c on c.id=b.user_id where c.`name`=#{0}
 	</select>
+
+	<delete id="deleteAll">
+     delete from  t_role
+	</delete>
      
 </mapper>
