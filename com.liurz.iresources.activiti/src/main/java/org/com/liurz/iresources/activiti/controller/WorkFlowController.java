@@ -1,8 +1,7 @@
 package org.com.liurz.iresources.activiti.controller;
 
-import java.util.List;
-import java.util.Map;
-
+import com.alibaba.druid.util.StringUtils;
+import io.swagger.annotations.Api;
 import org.com.liurz.iresources.activiti.entity.WorkFlowVo;
 import org.com.liurz.iresources.activiti.service.IWorkFlowService;
 import org.com.liurz.iresources.activiti.util.Constants;
@@ -16,9 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alibaba.druid.util.StringUtils;
-
-import io.swagger.annotations.Api;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 流程处理
@@ -68,15 +66,17 @@ public class WorkFlowController {
 
 	/**
 	 * 任务审批：包括设置下一个节点处理人
+	 *        通过任务id或任务key进行流程审批
 	 * 
 	 * @Title: complete
 	 * @Description: TODO
-	 * @param activiti
+	 * @param workFlowVo workFlowVo
 	 * @throws Exception
 	 * @return Map<String,Object>
 	 */
 	// http://localhost:8080/activitServer/workflow/complete
 	// 参数：{"taskId":"22516","workFlowParams":{"approve":"liurz"}}
+	 // {"taskDefKey":"_9","workFlowParams":{"approve":"liurz"}}
 	// 返回值：{"status":"success","message":null,"errorDetail":null,"items":{"processId":"22508","taskId":"22516"}}
 	@RequestMapping(value = "/complete", method = RequestMethod.POST)
 	public ResponseVo complete(@RequestBody WorkFlowVo workFlowVo) throws Exception {

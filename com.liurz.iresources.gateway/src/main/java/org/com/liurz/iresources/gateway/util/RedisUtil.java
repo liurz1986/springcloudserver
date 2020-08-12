@@ -1,12 +1,11 @@
 package org.com.liurz.iresources.gateway.util;
 
-import java.util.Map;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
+import java.util.Map;
 
 /***
  * Redis工具(用于缓存)
@@ -249,20 +248,6 @@ public class RedisUtil {
 	public void disconnect() {
 
 		jedis.disconnect();
-
-	}
-
-	public static void main(String[] args) {
-		/*
-		 * JedisPool jedisPool = new JedisPool("192.168.0.105",6397); RedisUtil
-		 * redisUtil=new RedisUtil(jedisPool); redisUtil.set("redisUtil",
-		 * "redis demo"); System.out.println(redisUtil.get("redisUtil"));
-		 * redisUtil.closeResource(); redisUtil.disconnect();
-		 */
-		Object obj = "数据";
-		int h = obj.hashCode();
-		System.out.println(h);
-		System.out.println(h >>> 16);
 
 	}
 }

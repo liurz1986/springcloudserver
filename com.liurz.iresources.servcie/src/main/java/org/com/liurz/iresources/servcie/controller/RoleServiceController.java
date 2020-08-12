@@ -1,6 +1,11 @@
 package org.com.liurz.iresources.servcie.controller;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.com.liurz.iresources.servcie.annocation.Author;
+import org.com.liurz.iresources.servcie.entity.UserVO;
 import org.com.liurz.iresources.servcie.service.IRoleService;
 import org.com.liurz.iresources.servcie.util.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/rest/v1/role")
@@ -69,12 +70,12 @@ public class RoleServiceController {
 		return result;
 	}
 
-	//@Author(value = UserRole.ALLUSER)
+	// @Author(value = UserRole.ALLUSER)
 	@RequestMapping(value = "/findById/{id}", method = RequestMethod.GET)
 	public Map<String, Object> findaById(@PathVariable("id") int id) {
 		Map<String, Object> result = new HashMap<String, Object>();
 		try {
-			Map<String, Object> data = roleService.findaById(id);
+			List<Map<String, Object>> data = roleService.test();
 			result.put("data", data);
 			result.put("status", "success");
 		} catch (Exception e) {
@@ -95,5 +96,10 @@ public class RoleServiceController {
 			result.put("status", "error");
 		}
 		return result;
+	}
+
+	@RequestMapping("/test3")
+	public UserVO test3(int id) {
+		return roleService.getUser(id);
 	}
 }

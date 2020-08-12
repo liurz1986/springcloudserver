@@ -1,9 +1,10 @@
 package org.com.liurz.iresources.servcie.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
-
 import java.util.List;
 import java.util.Map;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface RoleMapper {
@@ -41,7 +42,8 @@ public interface RoleMapper {
 	 */
 	public List<String> getRoleName(String userName);
 
-
 	public void deleteAll();
+
+	public List<Map<String, Object>> test(@Param("ids") List<Integer> ids, @Param("names") List<String> names);
 
 }

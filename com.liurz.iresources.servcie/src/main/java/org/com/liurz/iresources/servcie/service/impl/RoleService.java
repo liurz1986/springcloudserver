@@ -1,11 +1,14 @@
 package org.com.liurz.iresources.servcie.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.com.liurz.iresources.servcie.entity.UserVO;
 import org.com.liurz.iresources.servcie.mapper.RoleMapper;
+import org.com.liurz.iresources.servcie.mapper.UserVOMapper;
 import org.com.liurz.iresources.servcie.service.IRoleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,6 +35,9 @@ public class RoleService implements IRoleService {
 
 	@Autowired
 	TransactionDefinition transactionDefinition;
+
+	@Autowired
+	private UserVOMapper userVOMapper;
 
 	TransactionStatus transactionStatus = null;
 
@@ -84,4 +90,19 @@ public class RoleService implements IRoleService {
 		return roleMapper.findaById(id);
 	}
 
+	public List<Map<String, Object>> test() {
+		List<Integer> ids = new ArrayList<Integer>();
+		ids.add(2);
+		ids.add(3);
+		ids.add(4);
+		List<String> names = new ArrayList<String>();
+		names.add("test4");
+		names.add("test3");
+		names.add("liurz");
+		return roleMapper.test(ids, names);
+	}
+
+	public UserVO getUser(int id) {
+		return userVOMapper.selectByPrimaryKey(id);
+	}
 }

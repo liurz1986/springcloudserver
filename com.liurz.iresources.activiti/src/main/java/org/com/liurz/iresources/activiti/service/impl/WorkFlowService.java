@@ -1,10 +1,8 @@
 package org.com.liurz.iresources.activiti.service.impl;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.alibaba.druid.util.StringUtils;
+import com.alibaba.fastjson.JSON;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.runtime.ProcessInstance;
@@ -18,7 +16,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.alibaba.druid.util.StringUtils;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * RepositoryService: 流程仓库Service，用于管理流程仓库，例如：部署，删除，读取流程资源
@@ -40,6 +41,7 @@ import com.alibaba.druid.util.StringUtils;
 @Service
 public class WorkFlowService implements IWorkFlowService {
 	private Logger logger = LoggerFactory.getLogger(WorkFlowService.class);
+	ObjectMapper objectMapper = new ObjectMapper();
 	/**
 	 * 任务管理
 	 */
@@ -82,7 +84,7 @@ public class WorkFlowService implements IWorkFlowService {
 	}
 
 	/**
-	 * 审批任务，并制定下一个节点审批人
+	 * 审批任务，并制定下一个节点审批人:任务id或任务key进行审批
 	 * 
 	 * @param workFlowVo
 	 *            :其中WorkFlowParams传递了下一个节点的审批人、以及审批时分支判断条件参数
@@ -94,12 +96,19 @@ public class WorkFlowService implements IWorkFlowService {
 		Map<String, Object> items = new HashMap<String, Object>();
 		result.setStatus(Constants.SUCCESS);
 		String taskId = workFlowVo.getTaskId();
-		if (null == taskId) {
+		String taskKey = workFlowVo.getTaskDefKey();
+		if (null == taskId && null == taskKey) {
 			result.setStatus(Constants.FAIL);
-			result.setMessage("taskId不能为空");
+			result.setMessage("taskId或taskKey不能为空");
 			return result;
 		}
-		Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
+		Task task = null;
+		if (null != taskId) {
+			task = taskService.createTaskQuery().taskId(taskId).singleResult();
+		} else {
+			task = taskService.createTaskQuery().taskDefinitionKey(taskKey).singleResult();
+			taskId = task.getId();
+		}
 		if (null == task) {
 			result.setStatus(Constants.FAIL);
 			result.setMessage("当前任务已经处理，taskid:" + taskId);
@@ -108,18 +117,27 @@ public class WorkFlowService implements IWorkFlowService {
 		String processId = task.getProcessInstanceId();
 		// 审批
 		taskService.complete(taskId, workFlowVo.getWorkFlowParams());// 查看act_ru_task表
-		Task taskCurr = taskService.createTaskQuery().processInstanceId(processId).singleResult();
-		if (null == taskCurr) {
+		// 下一个任务节点(并行网关会返回多个任务)
+		List<Task> taskCurr = taskService.createTaskQuery().processInstanceId(processId).list();
+		if (null == taskCurr || taskCurr.size() == 0) {
 			result.setMessage("流程结束");
 			result.setProccessStatus("0"); // 流程结束
 			logger.info("流程审批结束：流程已经结束");
 			return result;
 		}
-		String taskIdNext = taskCurr.getId();
-		items.put("processId", processId);
-		items.put("taskId", taskIdNext);
-		result.setItems(items);
-		logger.info("流程审批结束：下一节点任务id：" + taskIdNext);
+		if (taskCurr.size() == 1) {
+			String taskIdNext = taskCurr.get(0).getId();
+			items.put("processId", processId);
+			items.put("taskId", taskIdNext);
+			result.setItems(items);
+			logger.info("流程审批结束：下一节点任务id：" + taskIdNext);
+		} else { // 并行网关
+			items.put("processId", processId);
+			items.put("tasks", taskCurr);
+			result.setItems(items);
+			logger.info("流程审批结束：下一节点为多任务：" + JSON.toJSONString(taskCurr));
+		}
+
 		return result;
 	}
 

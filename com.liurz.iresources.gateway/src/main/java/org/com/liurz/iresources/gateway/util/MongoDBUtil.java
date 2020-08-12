@@ -1,28 +1,26 @@
 package org.com.liurz.iresources.gateway.util;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class MongoDBUtil {
 	// 连接MongoDB数据库
 	MongoClient mongoClient = null;
 	DB db = null;
-	@Value("mongodb.ip")
+	//@Value("mongodb.ip")
 	private String ip;
-	@Value("mongodb.port")
+	//@Value("mongodb.port")
 	private Integer port;
-	@Value("mongodb.databasename")
+	//@Value("mongodb.databasename")
 	private String dataBaseName;
 
 	@SuppressWarnings("deprecation")
