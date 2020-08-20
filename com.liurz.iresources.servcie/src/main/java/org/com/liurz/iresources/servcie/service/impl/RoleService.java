@@ -8,7 +8,6 @@ import java.util.concurrent.Executors;
 
 import org.com.liurz.iresources.servcie.entity.UserVO;
 import org.com.liurz.iresources.servcie.mapper.RoleMapper;
-import org.com.liurz.iresources.servcie.mapper.UserVOMapper;
 import org.com.liurz.iresources.servcie.service.IRoleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,8 +35,8 @@ public class RoleService implements IRoleService {
 	@Autowired
 	TransactionDefinition transactionDefinition;
 
-	@Autowired
-	private UserVOMapper userVOMapper;
+	// @Autowired
+	// private UserVOMapper userVOMapper;
 
 	TransactionStatus transactionStatus = null;
 
@@ -103,6 +102,7 @@ public class RoleService implements IRoleService {
 	}
 
 	public UserVO getUser(int id) {
-		return userVOMapper.selectByPrimaryKey(id);
+
+		return null;
 	}
 }

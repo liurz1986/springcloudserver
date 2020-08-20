@@ -5,7 +5,7 @@ import java.util.Date;
 public class UserVO {
     private Integer id;
 
-    private Date create_time;
+    private Date createTime;
 
     private String email;
 
@@ -15,11 +15,35 @@ public class UserVO {
 
     private Integer status;
 
-    private Date update_time;
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    private Date updateTime;
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 
     private String uuid;
 
-    private Date end_time;
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    private Date endTime;
 
     public Integer getId() {
         return id;
@@ -29,13 +53,6 @@ public class UserVO {
         this.id = id;
     }
 
-    public Date getCreate_time() {
-        return create_time;
-    }
-
-    public void setCreate_time(Date create_time) {
-        this.create_time = create_time;
-    }
 
     public String getEmail() {
         return email;
@@ -69,13 +86,6 @@ public class UserVO {
         this.status = status;
     }
 
-    public Date getUpdate_time() {
-        return update_time;
-    }
-
-    public void setUpdate_time(Date update_time) {
-        this.update_time = update_time;
-    }
 
     public String getUuid() {
         return uuid;
@@ -85,11 +95,5 @@ public class UserVO {
         this.uuid = uuid == null ? null : uuid.trim();
     }
 
-    public Date getEnd_time() {
-        return end_time;
-    }
 
-    public void setEnd_time(Date end_time) {
-        this.end_time = end_time;
-    }
 }
